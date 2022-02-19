@@ -10,58 +10,58 @@ public class PassOrFailClass {
 
         System.out.print("Your math grade: ");
         maths = scanner.nextInt();
-        if((maths < 0) || (maths > 100)){
+        if ((maths < 0) || (maths > 100)) {
             counter += 0;
-        }else{
+        } else {
             total += maths;
-            counter ++;
+            counter++;
         }
 
         System.out.print("Your Physics grade: ");
         physics = scanner.nextInt();
-        if((physics < 0) || (physics > 100)){
+        if ((physics < 0) || (physics > 100)) {
             counter += 0;
-        }else{
+        } else {
             total += physics;
-            counter ++;
+            counter++;
         }
 
         System.out.print("Your Turkish grade: ");
         turkish = scanner.nextInt();
-        if((turkish < 0) || (turkish > 100)){
+        if ((turkish < 0) || (turkish > 100)) {
             counter += 0;
-        }else{
+        } else {
             total += turkish;
-            counter ++;
+            counter++;
         }
 
         System.out.print("Your Chemistry grade: ");
         chemistry = scanner.nextInt();
-        if((chemistry < 0) || (chemistry > 100)){
+        if ((chemistry < 0) || (chemistry > 100)) {
             counter += 0;
-        }else{
+        } else {
             total += chemistry;
-            counter ++;
+            counter++;
         }
 
-         System.out.print("Your Music grade: ");
+        System.out.print("Your Music grade: ");
         music = scanner.nextInt();
-        if((music < 0) || (music > 100)){
+        if ((music < 0) || (music > 100)) {
             counter += 0;
-        }else{
+        } else {
             total += music;
-            counter ++;
+            counter++;
         }
         scanner.close();
-        
-         average = total/counter;
 
-        if(average < 55){
-                 System.out.println("You failed the class.");
-        }else{
-            System.out.println("You passed the class.");     
+        average = total / counter;
+
+        if (average < 55) {
+            System.out.println("You failed the class.");
+        } else {
+            System.out.println("You passed the class.");
         }
         System.out.println("Your average grade: " + average);
-        
+
     }
 }
